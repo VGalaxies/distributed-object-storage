@@ -12,7 +12,9 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusMethodNotAllowed)
 		return
 	}
-	info := Locate(strings.Split(r.URL.EscapedPath(), "/")[2])
+	// remove `/`locate/`
+	// replace `/` to `%2F`
+	info := Locate(strings.Replace(r.URL.EscapedPath()[8:], "/", "%2F", -1))
 	if len(info) == 0 {
 		w.WriteHeader(http.StatusNotFound)
 		return
