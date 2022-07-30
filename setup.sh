@@ -1,6 +1,7 @@
 for i in `seq 0 5`; do mkdir -p /tmp/$i/objects; done
 
 export RABBITMQ_SERVER=amqp://root:root@localhost:5672
+export ES_SERVER=localhost:9200
 
 # go run in the corresponding module
 cd dataServer

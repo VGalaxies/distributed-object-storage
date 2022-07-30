@@ -1,0 +1,30 @@
+{
+  "_shards": {
+    "failed": 0,
+    "skipped": 0,
+    "successful": 1,
+    "total": 1
+  },
+  "hits": {
+    "hits": [
+      {
+        "_id": "hello_1",
+        "_index": "metadata",
+        "_score": 0.2876821,
+        "_source": {
+          "hash": "123123123123",
+          "name": "hello",
+          "size": 12,
+          "version": 1
+        }
+      }
+    ],
+    "max_score": 0.2876821,
+    "total": {
+      "relation": "eq",
+      "value": 1
+    }
+  },
+  "timed_out": false,
+  "took": 4
+}
